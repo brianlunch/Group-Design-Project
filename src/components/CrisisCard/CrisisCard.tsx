@@ -8,7 +8,7 @@ interface ContainerProps {
   category: string;
 }
 
-const ExploreContainer: React.FC<ContainerProps> = ({ crisis, severity,category }) => {
+const CrisisCard: React.FC<ContainerProps> = ({ crisis, severity,category }) => {
 
   return (
       
@@ -39,4 +39,4 @@ const ExploreContainer: React.FC<ContainerProps> = ({ crisis, severity,category 
   );
 };
 
-export default ExploreContainer;
+export default CrisisCard;
