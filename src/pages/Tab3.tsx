@@ -1,5 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonRow,IonGrid, IonTitle, IonToolbar } from '@ionic/react';
+import MapContainer from '../components/MapContainer/MapContainer';
 import './Tab3.css';
 
 const Tab3: React.FC = () => {
@@ -8,7 +8,7 @@ const Tab3: React.FC = () => {
 
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
+          <IonTitle>Map</IonTitle>
         </IonToolbar>
       </IonHeader>
 
@@ -16,14 +16,20 @@ const Tab3: React.FC = () => {
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
+            <IonTitle size="large">Map</IonTitle>
           </IonToolbar>
         </IonHeader>
 
+        <IonGrid>
+          <IonRow className ="mapHeight">
+          <MapContainer/>
+          </IonRow>
+          <IonRow className ="locationsHeight">
+          
+          </IonRow>
+        </IonGrid>
 
-        <ExploreContainer name="Tab 3 page" />
 
-        
       </IonContent>
     
     </IonPage>

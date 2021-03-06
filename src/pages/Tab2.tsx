@@ -26,10 +26,10 @@ const Tab2: React.FC = () => {
       
       <IonRow>
         <IonCol>
-        <QuickLinkTile title="Contact Emegency Services" icon="call"/>
+        <QuickLinkTile title="Contact Emergency Services" icon="call"/>
         </IonCol>
         <IonCol>
-        <QuickLinkTile title="Download Info" icon="download"/>
+        <QuickLinkTile title="Download Crises Information" icon="download"/>
         </IonCol>
       </IonRow>
 
