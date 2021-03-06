@@ -11,7 +11,9 @@ interface ContainerProps {
 
 const NewsItem: React.FC<ContainerProps> = ({ headline,source,url,date }) => {
 
-    var justDate = date.split(" ")[0];
+
+var justDate = " ";
+    if(date != undefined){ justDate = date.split(" ")[0];}
 
   return (
       
@@ -28,14 +30,7 @@ const NewsItem: React.FC<ContainerProps> = ({ headline,source,url,date }) => {
                 </IonCol>
             </IonRow>
             
-        </a>
-
-       
-        
-               
-               
-            
-
+        </a>        
     </div>
   );
 };

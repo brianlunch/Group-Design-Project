@@ -8,53 +8,9 @@ import News from '../../Util/newsFetch'
 import axios from 'axios';
  
 
-interface ContainerProps {
-  title: string;
-}
 
 
-  
 
-let articles: {author: string,
-    clean_url: string,
-    country: string,
-    language: string,
-    link: string,
-    published_date: string,
-    rank: string,
-    rights: string,
-    summary: string,
-    title: string,
-    topic: string,
-    _id: string,
-    _score: number}[] = [{author: "string",
-        clean_url: "string",
-        country: "string",
-        language: "string",
-        link: "string",
-        published_date: "string",
-        rank: "string",
-        rights: "string",
-        summary: "string",
-        title: "string",
-        topic: "string",
-        _id: "string",
-        _score: 10}];
-
-
-function useForceUpdate(){
-    const [value, setValue] = useState(0); // integer state
-    return () => setValue(value => value + 1); // update the state to force render
-}
-
-function searchYelp(crisis:string){
-
-    News.search(crisis).then(articles =>{
-        console.log(articles)
-        return articles;
-    });
-   
-   }
 
 const NewsContainer = ({ title }) => {
 
