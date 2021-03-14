@@ -10,7 +10,7 @@
 }
 
 .newsItemCard{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid blue;
 }
 
 .noMarginB{
@@ -27,4 +27,10 @@
 
 .fullWidth{
     width:100%
+}
+
+ion-card{
+    border-color: blue;
+    
+    border-radius:20px;
 }

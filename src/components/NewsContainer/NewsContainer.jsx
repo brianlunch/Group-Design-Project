@@ -23,7 +23,7 @@ var s = 'Philippines '+title;
     const options = {
       method: 'GET',
       url: 'https://newscatcher.p.rapidapi.com/v1/search_free',
-      params: {q: s, lang: 'en', page_size: '3', media: 'True'},
+      params: {q: s, lang: 'en', page_size: '10', media: 'True'},
       headers: {
         'x-rapidapi-key': '039ddef734msh07919f94290861dp14440fjsna239b77e2334',
         'x-rapidapi-host': 'newscatcher.p.rapidapi.com'
@@ -44,9 +44,9 @@ var s = 'Philippines '+title;
 
     
         <IonCardHeader>
-        <IonCardTitle className="smallFont">{title + " News"}</IonCardTitle>
+        <IonCardTitle className="smallFont">{title}</IonCardTitle>
         
-        {data.map((article) => <NewsItem headline={article.title} source={article.rights} url={article.link} date={article.published_date}/>)}
+        {data.slice(0, 2).map((article) => <NewsItem headline={article.title} source={article.rights} url={article.link} date={article.published_date}/>)}
         
         </IonCardHeader>
 

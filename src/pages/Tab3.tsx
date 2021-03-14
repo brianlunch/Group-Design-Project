@@ -1,8 +1,16 @@
 import { IonContent, IonHeader, IonPage, IonRow,IonGrid, IonTitle, IonToolbar } from '@ionic/react';
-import MapContainer from '../components/MapContainer/MapContainer';
+import GMaps from '../components/GMaps/GMaps';
 import './Tab3.css';
 
 const Tab3: React.FC = () => {
+
+  const location = {
+    address: 'No. 333 Antonio J. Villegas Street corner Padre Burgos Avenue & Natividad Lopez Street',  
+    lat: 14.5995,
+    lng: 120.9842,
+  }
+  
+
   return (
     <IonPage>
 
@@ -20,14 +28,7 @@ const Tab3: React.FC = () => {
           </IonToolbar>
         </IonHeader>
 
-        <IonGrid>
-          <IonRow className ="mapHeight">
-          <MapContainer/>
-          </IonRow>
-          <IonRow className ="locationsHeight">
-          
-          </IonRow>
-        </IonGrid>
+        <GMaps location={location} zoomLevel={17}/>
 
 
       </IonContent>
