@@ -5,9 +5,9 @@ import './Tab3.css';
 const Tab3: React.FC = () => {
 
   const location = {
-    address: 'No. 333 Antonio J. Villegas Street corner Padre Burgos Avenue & Natividad Lopez Street',  
-    lat: 14.5995,
-    lng: 120.9842,
+    address: 'Philippine General Hospital', //'2 Taft Ave, Ermita, Manila, 1000 Metro Manila',  
+    lat: 14.577551868728483,
+    lng: 120.98625405784342
   }
   
 
