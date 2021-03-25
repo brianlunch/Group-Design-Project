@@ -8,10 +8,8 @@ import LocationCard from '../locationCard/locationCard';
 
 var hospitals = [
 
-
-
   //Philipe General Hospital
-  , {
+  {
     address: 'Philippine General Hospital', //'2 Taft Ave, Ermita, Manila, 1000 Metro Manila',  
     lat: 14.577551868728483,
     lng: 120.98625405784342
@@ -79,7 +77,7 @@ const GMaps = ({ location, zoomLevel }) => (
         defaultZoom={zoomLevel}
       >
 
-        {hospitals.map((location) =>
+        {hospitals.map( (location) =>
           <LocationPin
             lat={location.lat}
             lng={location.lng}
@@ -88,10 +86,12 @@ const GMaps = ({ location, zoomLevel }) => (
 
       </GoogleMapReact>
     </div>
+
     <div className="list">
       {hospitals.map((location) =>
         <LocationCard location={location}></LocationCard>)}
     </div>
+
   </div>
 )
 

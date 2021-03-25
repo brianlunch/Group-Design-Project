@@ -29,6 +29,7 @@
 
   .list{
     overflow:auto;
+    max-height: 30vh;
   }
   
   @media screen and (min-width: 799px) {
