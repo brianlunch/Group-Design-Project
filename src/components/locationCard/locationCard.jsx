@@ -8,6 +8,8 @@ import {navigate } from 'ionicons/icons';
 
 const LocationCard = ({ location }) => {
 
+
+    var link = "https://www.google.com/maps?saddr=My+Location&daddr="+location.lat+","+location.lng;
     
   return (
       
@@ -21,8 +23,10 @@ const LocationCard = ({ location }) => {
                 </IonCol>
 
                 <IonCol className="ion-text-center">
+                    <a href={link}>
                     <IonIcon icon={navigate}></IonIcon>
                     <p>Directions</p>
+                    </a>
                 </IonCol>
 
             </IonRow>
