@@ -6,33 +6,28 @@ import { pin } from 'ionicons/icons';
 import LocationCard from '../locationCard/locationCard';
 var items = []; //Array to push the items into
 
-// function getHospitals() {
-//   fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=hospital&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
-//   .then(response => response.json())
-//   .then(data => console.log(data));
-//   //Will push data to the items array
-// }
+function getHospitals() {
+  fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=hospital&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
+  .then(response => response.json())
+  .then(data => console.log(data));
+}
 
-// function getRestaurants() {
-//   fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=restaurant&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
-//   .then(response => response.json())
-//   .then(data => console.log(data));
-//   //Will push data to the items array
-// }
+function getRestaurants() {
+  fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=restaurant&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
+  .then(response => response.json())
+  .then(data => console.log(data));}
 
-// function getPharmacy() {
-//   fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=pharmacy&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
-//   .then(response => response.json())
-//   .then(data => console.log(data));
-//   //Will push data to the items array
-// }
+function getPharmacy() {
+  fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=pharmacy&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
+  .then(response => response.json())
+  .then(data => console.log(data));
+}
 
-// function getEmbassy() {
-//   fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=embassy&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
-//   .then(response => response.json())
-//   .then(data => console.log(data));
-//   //Will push data to the items array
-// }
+function getEmbassy() {
+  fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=embassy&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
+  .then(response => response.json())
+  .then(data => console.log(data));
+}
 
 var hospitals = [
 
@@ -130,37 +125,37 @@ const LocationPin = ({ text }) => (
   </div>
 )
 
-class APICall extends React.Component {
-  constructor(props) {
-      super(props);
-      this.state = {
-        error: null,
-        isLoaded: false,
-        items: []
-      };
-  }
+// class APICall extends React.Component {
+//   constructor(props) {
+//       super(props);
+//       this.state = {
+//         error: null,
+//         isLoaded: false,
+//         items: []
+//       };
+//   }
 
-  componentDidMount() {
-      fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=hospital&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
-      .then(res => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            items: result.items
-          });
-        },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      )     
-  }
-}
+//   componentDidMount() {
+//       fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=hospital&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
+//       .then(res => res.json())
+//       .then(
+//         (result) => {
+//           this.setState({
+//             isLoaded: true,
+//             items: result.items
+//           });
+//         },
+//         // Note: it's important to handle errors here
+//         // instead of a catch() block so that we don't swallow
+//         // exceptions from actual bugs in components.
+//         (error) => {
+//           this.setState({
+//             isLoaded: true,
+//             error
+//           });
+//         }
+//       )     
+//   }
+// }
 
 export default GMaps
