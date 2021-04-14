@@ -13,6 +13,27 @@ var items = []; //Array to push the items into
 //   //Will push data to the items array
 // }
 
+// function getRestaurants() {
+//   fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=restaurant&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
+//   .then(response => response.json())
+//   .then(data => console.log(data));
+//   //Will push data to the items array
+// }
+
+// function getPharmacy() {
+//   fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=pharmacy&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
+//   .then(response => response.json())
+//   .then(data => console.log(data));
+//   //Will push data to the items array
+// }
+
+// function getEmbassy() {
+//   fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=14.599512,120.9842222&radius=1500&type=embassy&key=AIzaSyD3Dzg1q3SVdZx8OMq_41sY8VLZ7vdJNHg")
+//   .then(response => response.json())
+//   .then(data => console.log(data));
+//   //Will push data to the items array
+// }
+
 var hospitals = [
 
   //Philipe General Hospital
