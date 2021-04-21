@@ -4,17 +4,19 @@ import './Tab1.css';
 
 const Tab1: React.FC = () => {
   return (
-    <IonPage>
+    <IonPage className="ion-text-center">
       
       <IonContent fullscreen>
-        
+        <h2>News</h2>
 
-
+{
         <IonRow>
+          
           <NewsContainer title="Coronavirus"/>         
-          <NewsContainer title="Volcano"/>          
+          <NewsContainer title="Volcanic Eruption"/>     
+                  
         </IonRow>
-
+  }
         <IonRow>
           
         </IonRow>
