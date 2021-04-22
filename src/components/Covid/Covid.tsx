@@ -1,4 +1,4 @@
-import { IonCard, IonGrid, IonRow, IonCol, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonCardContent } from '@ionic/react';
+import { IonCard, IonPage, IonRow, IonCol, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonCardContent } from '@ionic/react';
 import { chevronDown, chevronUp, warning } from 'ionicons/icons';
 
 
@@ -9,6 +9,7 @@ interface ContainerProps {
 const Covid: React.FC<ContainerProps> = () => {
 
   return (
+    <IonPage>
     <div className="ion-text-left">
 
       <h2 className="ion-text-center">Covid-19</h2><br />
@@ -65,7 +66,7 @@ const Covid: React.FC<ContainerProps> = () => {
         </IonRow>
       </IonCard>
     </div>
-
+    </IonPage>
   );
 };
 

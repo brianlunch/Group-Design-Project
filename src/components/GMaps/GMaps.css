@@ -8,7 +8,7 @@
   
   .google-map {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
    
   }
   
@@ -29,7 +29,7 @@
 
   .list{
     overflow:auto;
-    max-height: 30vh;
+    max-height: 50vh;
   }
   
   @media screen and (min-width: 799px) {

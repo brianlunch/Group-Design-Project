@@ -20,6 +20,7 @@
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
     "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
     "cordova-plugin-googlemaps": "^2.7.1",
     "google-map-react": "^2.1.9",
     "ionicons": "^5.4.0",
